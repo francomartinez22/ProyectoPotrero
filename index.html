@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Fotografias | Fotografía Profesional</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Woodland&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F6F4EB;
+            display: flex; /* Centramos todo el contenido */
+            flex-direction: column; /* Alineamos el contenido verticalmente */
+            align-items: center; /* Centramos horizontalmente el contenido */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+        }
+
+        .nombre-fotografo {
+            font-family: 'Woodland', cursive;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .logo-img {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        nav {
+             background-color: #444;
+            padding: 10px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+            display: flex;
+            justify-content: center; /* Centramos horizontalmente el contenido */
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centramos horizontalmente el menú */
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            padding: 20px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+            max-width: 1200px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+            flex: 1; /* Permitimos que el contenido principal se expanda verticalmente */
+            display: flex; /* Usamos flexbox para centrar verticalmente las secciones del contenido */
+            flex-wrap: wrap; /* Permitimos que las secciones se ajusten automáticamente al ancho de la pantalla */
+            justify-content: center; /* Centramos horizontalmente las secciones del contenido */
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+        }
+
+        .logo-img-footer {
+            max-width: 30px;
+            margin: 0 5px; /* Espacio entre los iconos de redes sociales */
+        }
+
+        .contact-form {
+            max-width: 400px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+            margin: 0 auto;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Estilos para la cuadrícula de fotógrafos */
+        .fotografo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .fotografo-item {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .fotografo-img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo1.png" alt="Logo SR Fotografias" class="logo-img">
+        <h1 class="nombre-fotografo">SR Fotografias</h1>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <!-- Menú de navegación con las opciones -->
+            <li><a href="index.html"">Nuestros Fotógrafos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            
+            <li><a href="servicios.html">Servicios Ofrecidos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la página de inicio (Home) -->
+    <main>
+        <section id="nuestros-fotografos">
+            <!-- Contenido de la página Nuestros Fotógrafos -->
+            <h2>Nuestros Fotógrafos</h2>
+
+            <!-- Cuadrícula de fotógrafos -->
+            <div class="fotografo-grid">
+                <!-- Fotógrafo 1 -->
+                <div class="fotografo-item">
+                    <img src="DiegoRodriguez.jpg" alt="Diego Rodríguez" class="fotografo-img">
+                    <h3>Diego Rodríguez</h3>
+                    <p>
+                        Diego Rodríguez es un fotógrafo documentalista reconocido por su habilidad para contar historias a través de sus imágenes. Desde joven, se interesó en capturar momentos de la vida cotidiana y los aspectos culturales de San Rafael. Su especialidad es la fotografía de aniversarios y eventos familiares, donde logra inmortalizar la emoción y la felicidad de las personas. Su trabajo ha sido destacado en numerosos medios y ha recibido premios por su enfoque artístico y narrativo. Además de su trabajo en eventos sociales, Diego también ha colaborado con organizaciones sin fines de lucro para documentar proyectos sociales y comunitarios, lo que le ha permitido dar visibilidad a temas importantes de la región.
+                    </p>
+                </div>
+
+                <!-- Fotógrafo 2 -->
+                <div class="fotografo-item">
+                    <img src="LuisGomez.jpg" alt="Luis Gómez" class="fotografo-img">
+                    <h3>Luis Gómez</h3>
+                    <p>
+                        Luis Gómez es un fotógrafo de naturaleza y paisajes con un talento excepcional para capturar la belleza de la región de San Rafael, Mendoza. Desde muy joven, mostró interés en la fotografía y la naturaleza, lo que lo llevó a viajar y explorar los parajes más hermosos de su tierra natal. Con el tiempo, se convirtió en un experto en fotografía de paisajes, destacándose por su capacidad para transmitir la majestuosidad de los paisajes montañosos y los viñedos en sus imágenes. Sus fotografías han sido exhibidas en diversas exposiciones locales y revistas de viajes, lo que le ha valido reconocimiento a nivel regional y nacional.
+                    </p>
+                </div>
+
+                <!-- Fotógrafo 3 -->
+                <div class="fotografo-item">
+                    <img src="MariaMartinez.jpg" alt="María Martínez" class="fotografo-img">
+                    <h3>María Martínez</h3>
+                    <p>
+                        María Martínez es una apasionada fotógrafa especializada en retratos y eventos sociales. Desde temprana edad, mostró un gran talento para capturar momentos emocionantes y plasmar la esencia de las personas en sus fotografías. Con el tiempo, se convirtió en una experta en retratos, especialmente en sesiones fotográficas para quinceañeras, donde su habilidad para resaltar la belleza y la juventud de las jóvenes ha sido ampliamente reconocida. María ha trabajado con diversas familias y organizaciones, creando recuerdos inolvidables de eventos importantes. Su trabajo creativo y su carisma le han valido una amplia base de clientes satisfechos en San Rafael y sus alrededores.
+                    </p>
+                </div>
+
+                <!-- Fotógrafo 4 -->
+                <div class="fotografo-item">
+                    <img src="MartaLopez.jpg" alt="Marta López" class="fotografo-img">
+                    <h3>Marta López</h3>
+                    <p>
+                        Marta López es una fotógrafa de moda y belleza con una carrera exitosa en el mundo de la moda. Desde una edad temprana, mostró un gran interés en la moda y la belleza, lo que la llevó a explorar el mundo de la fotografía de moda. Con el tiempo, se especializó en sesiones fotográficas de moda, donde su creatividad y estilo único le han permitido trabajar con diseñadores locales y modelos reconocidos. Sus fotografías de moda han sido presentadas en revistas y pasarelas, y su enfoque estético ha sido ampliamente elogiado. Además de su trabajo en la industria de la moda, Marta también ha realizado proyectos de retratos y belleza, creando imágenes cautivadoras que resaltan la singularidad y la belleza de cada individuo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resto del contenido ... (El código HTML que se muestra anteriormente) ... -->
+
+    </main>
+
+    <footer>
+        <!-- Barra de redes sociales -->
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook" class="logo-img-footer"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram" class="logo-img-footer"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter" class="logo-img-footer"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="YouTube" class="logo-img-footer"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt="LinkedIn" class="logo-img-footer"></a>
+        <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank"><img src="whatsapp.png" alt="WhatsApp" class="logo-img-footer"></a>
+        <!-- Email de contacto -->
+        <p>Contacto: <a href="mailto:fotossr@fotossr.com">fotossr@fotossr.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Fotografias | Galería</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Woodland&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F6F4EB;
+            display: flex; /* Centramos todo el contenido */
+            flex-direction: column; /* Alineamos el contenido verticalmente */
+            align-items: center; /* Centramos horizontalmente el contenido */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+        }
+
+        .nombre-fotografo {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .logo-img {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+            display: flex;
+            justify-content: center; /* Centramos horizontalmente el contenido */
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centramos horizontalmente el menú */
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            padding: 20px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+            max-width: 1200px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+            flex: 1; /* Permitimos que el contenido principal se expanda verticalmente */
+            display: flex; /* Usamos flexbox para centrar verticalmente las secciones del contenido */
+            flex-wrap: wrap; /* Permitimos que las secciones se ajusten automáticamente al ancho de la pantalla */
+            justify-content: center; /* Centramos horizontalmente las secciones del contenido */
+        }
+
+        section {
+            margin-bottom: 40px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+        }
+
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+        }
+
+        .logo-img-footer {
+            max-width: 30px;
+            margin: 0 5px; /* Espacio entre los iconos de redes sociales */
+        }
+
+        .slider {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .slider img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            object-fit: cover;
+            border-radius: 10px; /* Borde redondeado */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto de flotar */
+            transition: transform 0.3s; /* Transición suave al interactuar con las imágenes */
+        }
+
+        /* Estilos para el efecto de flotar al pasar el mouse */
+        .slider img:hover {
+            transform: translateY(-5px); /* Mover la imagen ligeramente hacia arriba al pasar el mouse */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <img src="logo1.png" alt="Logo SR Fotografias" class="logo-img">
+        <a href="index.html">
+            <h1 class="nombre-fotografo">SR Fotografias</h1>
+        </a>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <!-- Menú de navegación con las opciones -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Nuestros Fotógrafos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="servicios.html">Servicios Ofrecidos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Contenido de la página Galería -->
+    <main>
+        <section>
+            <h2>Galería de Bodas</h2>
+            <div class="slider">
+                <img src="Casamieto1.jpg" alt="Boda 1">
+                <img src="Casamieto2.jpg" alt="Boda 2">
+                <img src="Casamieto3.jpg" alt="Boda 3">
+                <img src="Casamieto4.jpg" alt="Boda 4">
+                <!-- Agregar más imágenes de bodas aquí -->
+            </div>
+        </section>
+        
+        <section>
+            <h2>Galería de Fiestas de 15</h2>
+            <div class="slider">
+                <img src="cumpleanos-15-1.jpg.png" alt="Quinceañera 1">
+                <img src="cumpleanos-15-2.jpg" alt="Quinceañera 2">
+                <img src="cumpleanos-15-3.jpg" alt="Quinceañera 3">
+                <img src="cumpleanos-15-4.jpg" alt="Quinceañera 4">
+                <!-- Agregar más imágenes de fiestas de 15 aquí -->
+            </div>
+        </section>
+
+        <section>
+            <h2>Galería de Cumpleaños</h2>
+            <div class="slider">
+                <img src="cumpleanos-18-1.jpg" alt="Cumpleaños 1">
+                <img src="cumpleanos-18-2.jpg" alt="Cumpleaños 2">
+                <img src="cumpleanos-18-3.jpg" alt="Cumpleaños 3">
+                <img src="Cumpleaños5.jpg" alt="Cumpleaños 4">
+                <!-- Agregar más imágenes de cumpleaños aquí -->
+            </div>
+        </section>
+    </main>
+
+
+    
+    <footer>
+        <!-- Barra de redes sociales -->
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook" class="logo-img-footer"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram" class="logo-img-footer"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter" class="logo-img-footer"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="YouTube" class="logo-img-footer"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt="LinkedIn" class="logo-img-footer"></a>
+        <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank"><img src="whatsapp.png" alt="WhatsApp" class="logo-img-footer"></a>
+        <!-- Email de contacto -->
+        <p>Contacto: <a href="mailto:fotossr@fotossr.com">fotossr@fotossr.com</a></p>
+    </footer>
+</body>
+</html>

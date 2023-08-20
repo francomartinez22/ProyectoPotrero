@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Fotografias | Servicios</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Woodland&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F6F4EB;
+            display: flex; /* Centramos todo el contenido */
+            flex-direction: column; /* Alineamos el contenido verticalmente */
+            align-items: center; /* Centramos horizontalmente el contenido */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+        }
+
+        .nombre-fotografo {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .logo-img {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+            display: flex;
+            justify-content: center; /* Centramos horizontalmente el contenido */
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centramos horizontalmente el menú */
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            padding: 20px;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+            max-width: 1200px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+            flex: 1; /* Permitimos que el contenido principal se expanda verticalmente */
+            display: flex; /* Usamos flexbox para centrar verticalmente las secciones del contenido */
+            flex-wrap: wrap; /* Permitimos que las secciones se ajusten automáticamente al ancho de la pantalla */
+            justify-content: space-between; /* Centramos horizontalmente las secciones del contenido */
+        }
+
+        section {
+            margin-bottom: 40px;
+            width: 31%; /* Ocupamos un tercio del ancho disponible */
+        }
+
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%; /* Ocupamos todo el ancho disponible */
+        }
+
+        .logo-img-footer {
+            max-width: 30px;
+            margin: 0 5px; /* Espacio entre los iconos de redes sociales */
+        }
+
+        .servicio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            max-width: 300px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .servicio img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <img src="logo1.png" alt="Logo SR Fotografias" class="logo-img">
+        <a href="index.html">
+            <h1 class="nombre-fotografo">SR Fotografias</h1>
+        </a>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <!-- Menú de navegación con las opciones -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Nuestros Fotógrafos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="servicios.html">Servicios Ofrecidos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Contenido de la página de Servicios -->
+    <main>
+        <section>
+            <h2>Servicios Ofrecidos</h2>
+            <div class="servicio">
+                <img src="bodas.jpg" alt="Fotografía de Boda">
+                <h3>Fotografía de Bodas</h3>
+                <p>¡Capturamos los momentos más especiales de tu boda para que los recuerdes toda la vida! Nuestro equipo de fotógrafos profesionales estará presente en cada detalle para inmortalizar ese día tan importante.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="quinceanera.jpg" alt="Fotografía de Quinceañera">
+                <h3>Fotografía de Fiestas de 15</h3>
+                <p>Si estás celebrando tus 15 años, te ofrecemos una sesión fotográfica única y especial. ¡Capturaremos toda la alegría y elegancia de esta etapa tan especial de tu vida!</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="cumpleanos.jpg" alt="Fotografía de Cumpleaños">
+                <h3>Fotografía de Cumpleaños</h3>
+                <p>Celebra tu cumpleaños con nosotros y guarda los mejores recuerdos de esta fecha tan especial. Nuestro equipo capturará cada sonrisa y emoción para que tengas memorias inolvidables.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="paisajes.jpg" alt="Fotografía de Paisajes">
+                <h3>Fotografía de Paisajes</h3>
+                <p>¿Te gusta viajar y disfrutar de impresionantes paisajes? Nuestro equipo de fotógrafos tiene una colección de imágenes asombrosas de paisajes naturales y urbanos.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="eventos.jpg" alt="Fotografía de Eventos">
+                <h3>Fotografía de Eventos Especiales</h3>
+                <p>Inmortaliza tus eventos especiales como inauguraciones, conferencias, fiestas empresariales y otros momentos importantes de tu vida profesional o personal.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="mascotas.jpg" alt="Fotografía de Mascotas">
+                <h3>Fotografía de Mascotas</h3>
+                <p>Tus mascotas son parte importante de tu familia, y queremos ayudarte a capturar su esencia y personalidad a través de sesiones fotográficas especiales para ellos.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="moda.jpg" alt="Fotografía de Moda">
+                <h3>Fotografía de Moda</h3>
+                <p>Si tienes una marca de moda o necesitas fotografías para tu portafolio, te ofrecemos sesiones de fotografía profesional para resaltar tus diseños y productos.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="producto.jpg" alt="Fotografía de Producto">
+                <h3>Fotografía de Productos</h3>
+                <p>Destaca tus productos con fotografías profesionales de alta calidad. Ideal para tiendas en línea, catálogos, redes sociales y más.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>&nbsp;</h2> <!-- Espacio en blanco para ajustar el diseño -->
+            <div class="servicio">
+                <img src="arte.jpg" alt="Fotografía Artística">
+                <h3>Fotografía Artística</h3>
+                <p>Explora la fotografía como una forma de arte. Nuestro equipo tiene experiencia en proyectos artísticos y estará encantado de trabajar contigo en ideas creativas.</p>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <footer>
+        <!-- Barra de redes sociales -->
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook" class="logo-img-footer"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram" class="logo-img-footer"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter" class="logo-img-footer"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="YouTube" class="logo-img-footer"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt="LinkedIn" class="logo-img-footer"></a>
+        <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank"><img src="whatsapp.png" alt="WhatsApp" class="logo-img-footer"></a>
+        <!-- Email de contacto -->
+        <p>Contacto: <a href="mailto:fotossr@fotossr.com">fotossr@fotossr.com</a></p>
+    </footer>
+</body>
+</html>
